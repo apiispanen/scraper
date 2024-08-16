@@ -41,6 +41,27 @@ for result in results:
     title = result["title"]
     link = result["link"]
 
+
+    # ##########################
+    # UNCOMMENT ONE OF THE FOLLOWING SECTIONS TO GET THE HTML OR TEXT:
+    # ##########################
+
+    # ##########################
+    # # SECTION 1: 
+    # # TO GRAB JUST THE HTML:
+    # # Using bs4, extract HTML from the link
+    # import requests
+    # from bs4 import BeautifulSoup
+    # response = requests.get(link)
+    # html = response.text
+    # soup = BeautifulSoup(html, "html.parser")
+    # # grab all emails from the page
+            
+    # print(soup)
+
+    # ##########################
+    # # SECTION 2:
+    # # TO GRAB JUST THE TEXT:
     # raw_text = extract_text_from_single_web_page(link)
    
     # print(raw_text.strip())
