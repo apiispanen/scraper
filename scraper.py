@@ -8,7 +8,6 @@ import trafilatura
 from trafilatura.spider import focused_crawler
 from bs4.element import Comment
 
-from .google import *
 
 
 def beautifulsoup_extract_text_fallback(response_content):

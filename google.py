@@ -1,7 +1,7 @@
 import os.path
 from dotenv import load_dotenv
 import requests
-
+from scraper import extract_text_from_single_web_page
 load_dotenv()
 
 
@@ -29,3 +29,19 @@ def google_search(query, num_results=5):
         # returning_dict[i]["htmlFormattedUrl"] = item["htmlFormattedUrl"]
 
     return returning_dict
+
+
+results = google_search("machine learning engineer job posting")
+
+for result in results: 
+    print(result["title"])
+    print(result["link"])
+    print(result["snippet"])
+    print("----")
+    title = result["title"]
+    link = result["link"]
+
+    # raw_text = extract_text_from_single_web_page(link)
+   
+    # print(raw_text.strip())
+
