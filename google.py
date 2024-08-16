@@ -29,3 +29,16 @@ def google_search(query, num_results=5):
         # returning_dict[i]["htmlFormattedUrl"] = item["htmlFormattedUrl"]
 
     return returning_dict
+
+print(google_search("machine learning engineer job posting"))
+
+"""#comment out the rest of the code to test the function 
+for results in results:
+    print(results["title"])
+    print(results["link"])
+    print(results["snippet"])
+    print("----")   
+    title = results["title"]
+    link = results["link"]
+
+    """
